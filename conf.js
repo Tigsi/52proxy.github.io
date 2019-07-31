@@ -11,7 +11,7 @@ jsproxy_config({
   },
 
   // 节点配置
-  node_map: {
+  node_map: {/*
     'demo-hk': {
       label: '演示服务-香港节点',
       lines: {
@@ -26,9 +26,40 @@ jsproxy_config({
       lines: {
         'node-aliyun-sg.etherdream.com:8443': 1,
       },
-    },
+    },*/
+	'mycfworker-1': {
+		label: 'Cloudflare加速节点-1',
+		lines: {
+			'shrill-unit-8594.jsproxy.workers.dev': 1,
+		}
+	},
+	'mycfworker-2': {
+		label: 'Cloudflare加速节点-2',
+		lines: {
+			'b.007.workers.dev': 1,
+		}
+	},
+	'mycfworker-3': {
+		label: 'Cloudflare加速节点-3',
+		lines: {
+			'b.hehe.workers.dev': 1,
+		}
+	},
+	'mycfworker-4': {
+		label: 'Cloudflare加速节点-4',
+		lines: {
+			'b.lulu.workers.dev': 1,
+		}
+	},
+	'mycfworker-5': {
+		label: 'Cloudflare加速节点-5',
+		lines: {
+			'shiny-block-3d50.52proxy.workers.dev': 1,
+		}
+	},
     'mysite': {
       label: '当前站点',
+	  //hidden: true,
       lines: {
         [location.host]: 1,
       }
@@ -43,9 +74,9 @@ jsproxy_config({
 
         // 免费版（低权重，分摊一些成本）
         // 每个账号每天 10 万次免费请求，但有频率限制
-        'b.007.workers.dev': 1,
-        'b.hehe.workers.dev': 1,
-        'b.lulu.workers.dev': 1,
+        
+        'odd-paper-3fc0.52proxy.workers.dev': 1,
+        
         'b.jsproxy.workers.dev': 1,
       }
     }
@@ -54,8 +85,8 @@ jsproxy_config({
   /**
    * 默认节点
    */
-  // node_default: 'mysite',
-  node_default: /jsproxy-demo\.\w+$/.test(location.host) ? 'demo-hk' : 'mysite',
+   node_default: 'mycfworker',
+  //node_default: /jsproxy-demo\.\w+$/.test(location.host) ? 'demo-hk' : 'mysite',
 
   /**
    * 加速节点
@@ -66,7 +97,7 @@ jsproxy_config({
    * 静态资源 CDN 地址
    * 用于加速 `assets` 目录中的资源访问
    */
-  assets_cdn: 'https://cdn.jsdelivr.net/gh/zjcqoo/zjcqoo.github.io@master/assets/',
+  assets_cdn: 'https://cdn.jsdelivr.net/gh/52proxy/52proxy.github.io@master/assets/',
 
   // 本地测试时打开，否则访问的是线上的
   // assets_cdn: 'assets/',
@@ -85,6 +116,7 @@ jsproxy_config({
   /**
    * URL 自定义处理（设计中）
    */
+   /*
   url_handler: {
     'https://www.baidu.com/img/baidu_resultlogo@2.png': {
       replace: 'https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png'
@@ -95,5 +127,5 @@ jsproxy_config({
     'http://haha.com/': {
       content: 'Hello World'
     },
-  }
+  }*/
 })
