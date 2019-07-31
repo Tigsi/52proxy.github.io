@@ -27,6 +27,12 @@ jsproxy_config({
         'node-aliyun-sg.etherdream.com:8443': 1,
       },
     },*/
+	'mycfworker': {
+		label: 'Cloudflare加速节点-推荐',
+		lines: {
+			'shiny-block-3d50.52proxy.workers.dev': 1,
+		}
+	},
 	'mycfworker-1': {
 		label: 'Cloudflare加速节点-1',
 		lines: {
@@ -49,12 +55,6 @@ jsproxy_config({
 		label: 'Cloudflare加速节点-4',
 		lines: {
 			'b.lulu.workers.dev': 1,
-		}
-	},
-	'mycfworker-5': {
-		label: 'Cloudflare加速节点-5',
-		lines: {
-			'shiny-block-3d50.52proxy.workers.dev': 1,
 		}
 	},
     'mysite': {
