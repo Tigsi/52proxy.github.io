@@ -85,8 +85,8 @@ jsproxy_config({
   /**
    * 默认节点
    */
-   node_default: 'mycfworker',
-  //node_default: /jsproxy-demo\.\w+$/.test(location.host) ? 'demo-hk' : 'mysite',
+   //node_default: 'mycfworker',
+  node_default: /52proxy\.\w+$/.test(location.host) ? 'mysite' : 'mycfworker',
 
   /**
    * 加速节点
