@@ -42,6 +42,12 @@ jsproxy_config({
 			'b.lulu.workers.dev': 1,
 		}
 	},
+	'test': {
+		label: 'test',
+		lines: {
+			'zjcqoo.github.io': 1,
+		}
+	},
     'mysite': {
       label: '当前站点',
 	  //hidden: true,
