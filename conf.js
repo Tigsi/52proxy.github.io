@@ -56,7 +56,7 @@ jsproxy_config({
    * 默认节点
    */
    //node_default: 'mycfworker',
-  node_default: /52proxy\.\w+$/.test(location.host) ? 'mycfwoker' : 'mysite',
+  node_default: /52proxy\.\w+$/.test(location.host) ? 'mycfworker' : 'mysite',
 
   /**
    * 加速节点
