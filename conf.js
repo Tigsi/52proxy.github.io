@@ -24,24 +24,6 @@ jsproxy_config({
 			'shrill-unit-8594.jsproxy.workers.dev': 1,
 		}
 	},
-	'mycfworker-2': {
-		label: 'Cloudflare加速节点-2',
-		lines: {
-			'b.007.workers.dev': 1,
-		}
-	},
-	'mycfworker-3': {
-		label: 'Cloudflare加速节点-3',
-		lines: {
-			'b.hehe.workers.dev': 1,
-		}
-	},
-	'mycfworker-4': {
-		label: 'Cloudflare加速节点-4',
-		lines: {
-			'b.lulu.workers.dev': 1,
-		}
-	},
     'mysite': {
       label: '当前站点',
 	  //hidden: true,
@@ -62,6 +44,9 @@ jsproxy_config({
         
         'odd-paper-3fc0.52proxy.workers.dev': 1,
         
+        'b.007.workers.dev': 1,
+        'b.hehe.workers.dev': 1,
+        'b.lulu.workers.dev': 1,
         'b.jsproxy.workers.dev': 1,
       }
     }
