@@ -18,12 +18,6 @@ jsproxy_config({
 			'shiny-block-3d50.52proxy.workers.dev': 1,
 		}
 	},
-	'mycfworker-1': {
-		label: 'Cloudflare加速节点-1',
-		lines: {
-			'shrill-unit-8594.jsproxy.workers.dev': 1,
-		}
-	},
     'mysite': {
       label: '当前站点',
 	  //hidden: true,
