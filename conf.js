@@ -15,7 +15,7 @@ jsproxy_config({
 	'HongKong': {
 		label: '香港节点',
 		lines: {
-			'https://5.180.97.160.nip.io:8443': 1,
+			'5.180.97.160.nip.io:8443': 1,
 		}
 	},
 	'mycfworker': {
@@ -56,7 +56,7 @@ jsproxy_config({
    * 默认节点
    */
    //node_default: 'mycfworker',
-  node_default: /52proxy\.\w+$/.test(location.host) ? 'mycfworker' : 'mysite',
+  node_default: /52proxy\.\w+$/.test(location.host) ? 'HongKong' : 'mysite',
 
   /**
    * 加速节点
