@@ -12,6 +12,12 @@ jsproxy_config({
 
   // 节点配置
   node_map: {
+	'HongKong': {
+		label: '香港节点',
+		lines: {
+			'https://5.180.97.160.nip.io:8443': 1,
+		}
+	},
 	'mycfworker': {
 		label: 'Cloudflare加速节点-推荐',
 		lines: {
