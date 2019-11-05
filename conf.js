@@ -14,12 +14,13 @@ jsproxy_config({
   node_map: {
 	'HongKong': {
 		label: '香港节点',
+		hidden: true,
 		lines: {
 			'5.180.97.160.nip.io:8443': 1,
 		}
 	},
 	'mycfworker': {
-		label: 'Cloudflare加速节点-推荐',
+		label: 'Cloudflare节点-备用',
 		lines: {
 			'shiny-block-3d50.52proxy.workers.dev': 1,
 		}
