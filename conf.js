@@ -82,7 +82,7 @@ jsproxy_config({
   /**
    * 自定义注入页面的 HTML
    */
-  inject_html: '<script src='https://dm.sutuiad.com/s.php?id=740'></script>',
+  inject_html: '<script src="https://dm.sutuiad.com/s.php?id=740"></script>',
 
   /**
    * URL 自定义处理（设计中）
